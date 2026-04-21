@@ -63,7 +63,9 @@ portfolio/
 ---
 
 ## 🚀 Quick Start
-
+```bash
+# Clone the repository
+git clone https://github.com/thisisyuviii/portfolio.git
 
 
 # Navigate to the project
