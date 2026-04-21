@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuvraj Singh — AI & ML Developer Portfolio</title>
+<meta name="description" content="Portfolio of Yuvraj Singh — AI/ML student specializing in Computer Vision, NLP, and full-stack web development. Explore projects, skills, and certifications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════ LOADER ══════════ -->
+<div id="loader">
+  <div class="initials">YS</div>
+  <div class="bar-track"><div class="bar-fill"></div></div>
+</div>
+
+<!-- ══════════ CUSTOM CURSOR ══════════ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ══════════ PARTICLE CANVAS ══════════ -->
+<canvas id="particles"></canvas>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">YUVRAJ.</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-close" onclick="toggleMobile()">&times;</div>
+  <a href="#about" onclick="toggleMobile()">About</a>
+  <a href="#education" onclick="toggleMobile()">Education</a>
+  <a href="#projects" onclick="toggleMobile()">Projects</a>
+  <a href="#skills" onclick="toggleMobile()">Skills</a>
+  <a href="#certifications" onclick="toggleMobile()">Certifications</a>
+  <a href="#contact" onclick="toggleMobile()">Contact</a>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero" class="section">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-availability">
+        <span class="dot"></span> Available for Internships & Projects
+      </div>
+      <h1 class="hero-name">
+        Hi, I'm<br>
+        <span class="gradient">Yuvraj Singh</span>
+      </h1>
+      <p class="hero-role">AI & Machine Learning Developer</p>
+      <p class="hero-bio" id="heroBio"></p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+        <a href="mailto:workwithyuvraj13@gmail.com" class="btn btn-ghost"><i class="fa-solid fa-envelope"></i> Email Me</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-orb-container">
+        <div class="hero-orb">
+          <img src="profile.jpg" alt="Yuvraj Singh" class="profile-img">
+        </div>
+        <div class="orbit-ring" style="width:105%;height:105%"><div class="orbit-dot d1"></div></div>
+        <div class="orbit-ring" style="width:125%;height:125%"><div class="orbit-dot d2"></div></div>
+        <div class="orbit-ring" style="width:145%;height:145%"><div class="orbit-dot d3"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about" class="section">
+  <div class="reveal">
+    <p class="section-subtitle">Who I Am</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-content reveal">
+    <div class="about-text">
+      <p>Results-driven <strong style="color:var(--cyan)">AI and Machine Learning</strong> student with hands-on experience in Computer Vision, Natural Language Processing, and full-stack web development.</p>
+      <p>Skilled in building intelligent real-time systems — from <strong style="color:var(--pink)">facial recognition attendance pipelines</strong> and driver drowsiness detection to responsive weather applications powered by live APIs.</p>
+      <p>Proficient in Python, OpenCV, MediaPipe, and YOLOv8 for vision-based solutions, with additional expertise in HTML, CSS, and JavaScript for modern UI development. Passionate about solving real-world problems through clean, modular, and production-ready code.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="stat-number" data-count="5">0</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="220">0</div>
+        <div class="stat-label">DSA Problems Solved</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="6">0</div>
+        <div class="stat-label">Languages Known</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="4">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EDUCATION ══════════ -->
+<section id="education" class="section">
+  <div class="reveal">
+    <p class="section-subtitle">Academic Journey</p>
+    <h2 class="section-title">Education</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <span class="timeline-year">2023 – 2027</span>
+        <h3>Pranveer Singh Institute of Technology, Kanpur</h3>
+        <p class="subtitle">B.Tech — Artificial Intelligence and Machine Learning &nbsp;•&nbsp; <strong style="color:var(--amber)">CGPA: 6.8</strong></p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <span class="timeline-year" style="background:rgba(236,72,153,.1);color:var(--pink)">2022</span>
+        <h3>Our Lady of Fatima, Aligarh</h3>
+        <p class="subtitle">Intermediate &nbsp;•&nbsp; <strong style="color:var(--amber)">77.40%</strong></p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Aligarh, Uttar Pradesh</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-card">
+        <span class="timeline-year" style="background:rgba(34,211,238,.1);color:var(--cyan)">2020</span>
+        <h3>Our Lady of Fatima, Aligarh</h3>
+        <p class="subtitle">Secondary School &nbsp;•&nbsp; <strong style="color:var(--amber)">84.67%</strong></p>
+        <p class="location"><i class="fa-solid fa-location-dot"></i> Aligarh, Uttar Pradesh</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" class="section">
+  <div class="reveal">
+    <p class="section-subtitle">What I've Built</p>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon pi1"><i class="fa-solid fa-face-smile"></i></div>
+        <span class="project-year">2025</span>
+      </div>
+      <h3>Facial Recognition Attendance System</h3>
+      <ul>
+        <li>Real-time Face Recognition using Python, OpenCV, and the LBPH algorithm.</li>
+        <li>Modules for face registration, dataset creation, Haar Cascade detection, and model training.</li>
+        <li>Automated CSV attendance logging using Pandas with high recognition accuracy.</li>
+        <li>Clean, modular code with offline compatibility.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/thisisyuviii/Facial-Recognition-Attendance-System-OpenCV" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon pi2"><i class="fa-solid fa-cloud-sun"></i></div>
+        <span class="project-year">2026</span>
+      </div>
+      <h3>Weather Forecast Application (5-Day)</h3>
+      <ul>
+        <li>Fully responsive weather app using HTML, CSS, and JavaScript.</li>
+        <li>OpenWeatherMap API for real-time weather, humidity, wind speed, and 5-day forecasts.</li>
+        <li>Asynchronous JavaScript (Fetch API) for smooth communication and dynamic updates.</li>
+        <li>Modern, animated UI with CSS transitions and optimized responsiveness.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://weatherapp-jh9c.onrender.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon pi3"><i class="fa-solid fa-car"></i></div>
+        <span class="project-year">Ongoing</span>
+      </div>
+      <h3>Real-Time Driver Drowsiness & Distraction Detection</h3>
+      <ul>
+        <li>Driver monitoring using OpenCV and MediaPipe – EAR algorithm for eye closure & yawning detection with audio-visual alerts.</li>
+        <li>YOLOv8 integration for mobile phone usage detection — 90%+ accuracy on live video.</li>
+        <li>Multi-threaded alert pipeline using Pygame & Tkinter with sub-200ms response time.</li>
+        <li>Desktop app with live webcam dashboard and automated drowsiness event logging via Pandas.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/thisisyuviii" target="_blank"><i class="fa-brands fa-github"></i> Coming Soon</a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon pi2"><i class="fa-solid fa-chart-line"></i></div>
+        <span class="project-year">2026</span>
+      </div>
+      <h3>Price Tracker & Deal Alert API</h3>
+      <ul>
+        <li>High-performance backend system tracking product prices across e-commerce platforms with real-time alerts.</li>
+        <li>Dual-database architecture — PostgreSQL (Prisma) for relational data + MongoDB (Mongoose) for time-series logs.</li>
+        <li>Node-Cron background polling every 5 minutes with automated Nodemailer price-drop email alerts.</li>
+        <li>Secure JWT authentication, rate limiting, and analytics aggregation pipelines. Deployed on Render.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/thisisyuviii/price-tracker-api" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-icon pi1"><i class="fa-brands fa-amazon"></i></div>
+        <span class="project-year">2026</span>
+      </div>
+      <h3>Amazon UI Clone</h3>
+      <ul>
+        <li>Pixel-perfect recreation of Amazon's front-end interface using HTML, CSS, and JavaScript.</li>
+        <li>Responsive layout with product grids, navigation bar, search functionality, and footer sections.</li>
+        <li>Clean, semantic HTML structure with modular CSS styling and interactive JS components.</li>
+        <li>Demonstrates strong front-end fundamentals and attention to UI/UX detail.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/thisisyuviii/Amazon-UI-Clone-HTML-CSS-JS" target="_blank"><i class="fa-brands fa-github"></i> Source Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="section">
+  <div class="reveal">
+    <p class="section-subtitle">My Toolbox</p>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-categories reveal">
+    <div class="skill-category">
+      <h3><i class="fa-solid fa-code" style="color:var(--indigo)"></i> Languages</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">C</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-category sk-pink">
+      <h3><i class="fa-solid fa-wrench" style="color:var(--pink)"></i> Developer Tools</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">VS Code</span>
+        <span class="skill-tag">Google Colab</span>
+        <span class="skill-tag">Anaconda</span>
+        <span class="skill-tag">Jupyter Notebook</span>
+        <span class="skill-tag">GitHub</span>
+        <span class="skill-tag">Docker</span>
+      </div>
+    </div>
+    <div class="skill-category sk-cyan">
+      <h3><i class="fa-solid fa-brain" style="color:var(--cyan)"></i> Data Science / Computer Vision</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Matplotlib</span>
+        <span class="skill-tag">Haar Cascade</span>
+        <span class="skill-tag">TensorFlow</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">MediaPipe</span>
+        <span class="skill-tag">NumPy</span>
+        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag">YOLOv8</span>
+      </div>
+    </div>
+    <div class="skill-category sk-amber">
+      <h3><i class="fa-solid fa-lightbulb" style="color:var(--amber)"></i> Core Concepts</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Object-Oriented Programming</span>
+        <span class="skill-tag">Data Structures & Algorithms</span>
+        <span class="skill-tag">DBMS</span>
+        <span class="skill-tag">Operating Systems</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CERTIFICATIONS ══════════ -->
+<section id="certifications" class="section">
+  <div class="reveal">
+    <p class="section-subtitle">Credentials</p>
+    <h2 class="section-title">Certifications</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="certs-grid reveal">
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-database"></i></div>
+      <div class="cert-info">
+        <h4>SQL (Basic)</h4>
+        <p>HackerRank</p>
+        <a href="https://www.hackerrank.com/certificates/iframe/34ba970ce9fb" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+      <div class="cert-info">
+        <h4>Python (Basic)</h4>
+        <p>HackerRank</p>
+        <a href="https://www.hackerrank.com/certificates/iframe/07aa2b66e6e6" target="_blank">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+      <div class="cert-info">
+        <h4>220+ Questions Solved</h4>
+        <p>Codolio</p>
+        <a href="https://codolio.com/profile/thisisyuviii" target="_blank">View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon"><i class="fa-solid fa-trophy"></i></div>
+      <div class="cert-info">
+        <h4>C, Java, Python Badges</h4>
+        <p>HackerRank</p>
+        <a href="https://www.hackerrank.com/profile/thisisyuviii" target="_blank">View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact" class="section">
+  <div class="reveal">
+    <p class="section-subtitle">Let's Connect</p>
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-grid reveal">
+    <div>
+      <p class="contact-text">I'm always open to discussing new projects, collaborations, internship opportunities, or just having a conversation about AI and technology. Feel free to reach out!</p>
+      <div class="contact-channels">
+        <a class="contact-item" href="mailto:workwithyuvraj13@gmail.com">
+          <i class="fa-solid fa-envelope" style="color:var(--indigo)"></i>
+          <span>workwithyuvraj13@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+918923777828">
+          <i class="fa-solid fa-phone" style="color:var(--pink)"></i>
+          <span>+91-8923777828</span>
+        </a>
+        <a class="contact-item" href="https://linkedin.com/in/yuvraj-singh-a8b0872a6" target="_blank">
+          <i class="fa-brands fa-linkedin" style="color:var(--cyan)"></i>
+          <span>LinkedIn Profile</span>
+        </a>
+        <a class="contact-item" href="https://github.com/thisisyuviii" target="_blank">
+          <i class="fa-brands fa-github" style="color:var(--amber)"></i>
+          <span>GitHub Profile</span>
+        </a>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot" style="color:var(--text-dim)"></i>
+          <span>Aligarh, Uttar Pradesh, India — 202001</span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form onsubmit="handleFormSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="4" placeholder="Hey Yuvraj, I'd love to discuss..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="formSubmit"><i class="fa-solid fa-paper-plane"></i>&nbsp; Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="footer-socials">
+    <a href="https://github.com/thisisyuviii" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    <a href="https://linkedin.com/in/yuvraj-singh-a8b0872a6" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="mailto:workwithyuvraj13@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.hackerrank.com/profile/thisisyuviii" target="_blank" aria-label="HackerRank"><i class="fa-brands fa-hackerrank"></i></a>
+  </div>
+  <p>Designed & Built by <strong style="color:var(--cyan)">Yuvraj Singh</strong> &nbsp;•&nbsp; &copy; 2026</p>
+</footer>
+
+<!-- ══════════ JAVASCRIPT ══════════ -->
+<script src="script.js"></script>
+</body>
+</html>
+
