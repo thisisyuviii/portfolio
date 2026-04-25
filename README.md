@@ -62,26 +62,6 @@ portfolio/
 
 ---
 
-## 🚀 Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/thisisyuviii/portfolio.git
-
-
-# Navigate to the project
-cd portfolio
-
-# Open in browser (or use any local server)
-# Option 1: Direct open
-open index.html
-
-# Option 2: Python server
-python -m http.server 8080
-
-# Option 3: VS Code Live Server
-# Install Live Server extension → Right-click index.html → Open with Live Server
-```
-
 ---
 
 ## 📸 Sections
