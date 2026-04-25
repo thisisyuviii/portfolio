@@ -62,8 +62,6 @@ portfolio/
 
 ---
 
----
-
 ## 📸 Sections
 
 | Section | Highlights |
